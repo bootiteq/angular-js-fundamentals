@@ -1,0 +1,19 @@
+<html lang="eng" ng-app>
+  <head></head>
+  <body ng-controller="HelloWorldCtrl">
+    
+      <h1>{{helloMessage}}</h1>
+      <p>{{welcomeIntro}}</p>
+    
+      <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.15/angular.min.js"></script>
+      <script>
+        function HelloWorldCtrl($scope){
+          $scope.helloMessage = "Hello World";
+          $scope.welcomeIntro = function(){
+            return ("Number:" + Number(1 + 6) + " lovely to meet you");
+          }
+        }
+    </script>
+  
+    </body>
+</html>
