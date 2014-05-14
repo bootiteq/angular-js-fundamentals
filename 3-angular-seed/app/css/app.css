@@ -36,3 +36,7 @@
 .votingWidget i{
   cursor: pointer;
 }
+
+input.ng-invalid.ng-dirty{
+  background: pink;
+}
